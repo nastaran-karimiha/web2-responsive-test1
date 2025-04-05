@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/main.css">
+  <link rel="stylesheet" href="./swiper/swiper.min.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
   <title>Document</title>
 </head>
 
@@ -26,17 +28,43 @@
       <div class="art-item"></div>
     </div>
     <!-- #endregion -->
+     <!-- #region swiper -->
+      <div class="slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./src/images/15c73d61ce2c77b74e73b041309145aa.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/44930a5db33e44cf010c5677d8e8400f.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/e7034203b74980f21b274e41da6cdd37.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/15c73d61ce2c77b74e73b041309145aa.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/44930a5db33e44cf010c5677d8e8400f.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./src/images/e7034203b74980f21b274e41da6cdd37.jpg" alt=""></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+      <!-- #endregion -->
   </div>
   <!-- #endregion -->
-   <!-- #region script -->
-    <script>
-      let art=document.querySelector(".art")
-      let menu=document.querySelector(".menu")
-      art.addEventListener("click",function(){
-        menu.classList.toggle("active")
-      })
-    </script>
-    <!-- #endregion -->
+  <!-- #region script -->
+   <script src="./swiper/swiper-bundle.min.js"></script>
+  <script>
+    let art = document.querySelector(".art")
+    let menu = document.querySelector(".menu")
+    art.addEventListener("click", function () {
+      menu.classList.toggle("active")
+    });
+     var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+   
+  </script>
+  
+  <!-- #endregion -->
 </body>
 
 </html>

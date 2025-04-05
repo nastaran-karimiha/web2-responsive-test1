@@ -5,6 +5,8 @@
     position: absolute;
     left: -100%;
     transition: 300ms;
+    top: 0;
+    z-index: 999;
 
     .menu-nav {
         width: 100%;
@@ -53,6 +55,7 @@
     cursor: pointer;
     transform: scale(1, 1);
     transition: 100ms;
+    z-index: 999;
 
     .art-item {
         width: 80%;
