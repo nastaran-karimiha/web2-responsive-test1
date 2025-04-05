@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 100%;
+}
+@font-face{
+    font-family: bebas;
+    src: url(./fonts/BebasNeue-Regular.eot);
+    src: url(./fonts/BebasNeue-Regular.ttf);
+    src: url(./fonts/BebasNeue-Regular.woff);
+    src: url(./fonts/BebasNeue-Regular.woff2);
+}
+:root{
+    --font-family:babas;
+}

@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./src/main.css">
   <title>Document</title>
 </head>
+
 <body>
-  
+  <!-- #region wrapper -->
+  <div class="wapper">
+    <!-- #region menue -->
+    <div class="menu">
+      <nav class="menu-nav">
+        <div class="menu-nav-item"><a class="nav-item-link" href="">home</a></div>
+        <div class="menu-nav-item"><a class="nav-item-link" href="">gallery</a></div>
+        <div class="menu-nav-item"><a class="nav-item-link" href="">contact</a></div>
+        <div class="menu-nav-item"><a class="nav-item-link" href="">about</a></div>
+      </nav>
+    </div>
+    <div class="art">
+      <div class="art-item"></div>
+      <div class="art-item"></div>
+      <div class="art-item"></div>
+    </div>
+    <!-- #endregion -->
+  </div>
+  <!-- #endregion -->
+   <!-- #region script -->
+    <script>
+      let art=document.querySelector(".art")
+      let menu=document.querySelector(".menu")
+      art.addEventListener("click",function(){
+        menu.classList.toggle("active")
+      })
+    </script>
+    <!-- #endregion -->
 </body>
+
 </html>
